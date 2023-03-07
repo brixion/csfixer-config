@@ -2,17 +2,17 @@
 
 declare(strict_types=1);
 
-namespace Brixion\CsfixerConfig\php81;
+namespace Brixion\CsfixerConfig;
 
 use Ergebnis\PhpCsFixer\Config\Factory;
-use Ergebnis\PhpCsFixer\Config\RuleSet\Php81;
-use PhpCsFixer\Config as PhpCsFixerConfig;
+use Ergebnis\PhpCsFixer\Config\RuleSet\Php81 as Php81RuleSet;
+use PhpCsFixer\Config;
 
-class Config
+class Php81
 {
-    public static function getCsFixerConfig(): PhpCsFixerConfig
+    public static function getConfig(): Config
     {
-        return Factory::fromRuleSet(new Php81(), [
+        return Factory::fromRuleSet(new Php81RuleSet(), [
             'native_function_invocation' => false,
             'native_constant_invocation' => false,
             'mb_str_functions' => false,
