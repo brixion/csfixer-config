@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Brixion\Csfixer\Config;
+namespace Brixion\CsfixerConfig;
 
 use Ergebnis\PhpCsFixer\Config\Factory;
 use Ergebnis\PhpCsFixer\Config\RuleSet\Php80;
