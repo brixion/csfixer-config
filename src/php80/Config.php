@@ -2,16 +2,15 @@
 
 declare(strict_types=1);
 
-namespace Brixion\CsfixerConfig;
+namespace Brixion\CsfixerConfig\php80;
 
 use Ergebnis\PhpCsFixer\Config\Factory;
 use Ergebnis\PhpCsFixer\Config\RuleSet\Php80;
-use Ergebnis\PhpCsFixer\Config\RuleSet\Php81;
-use PhpCsFixer\Config;
+use PhpCsFixer\Config as PhpCsFixerConfig;
 
-class CsFixer
+class Config
 {
-    public static function php80(): Config
+    public static function getCsFixerConfig(): PhpCsFixerConfig
     {
         return Factory::fromRuleSet(new Php80(), [
             'native_function_invocation' => false,
@@ -32,17 +31,6 @@ class CsFixer
                 'identical' => false,
                 'less_and_greater' => false,
             ],
-        ]);
-    }
-
-    public static function php81(): Config
-    {
-        return Factory::fromRuleSet(new Php81(), [
-            'native_function_invocation' => false,
-            'native_constant_invocation' => false,
-            'mb_str_functions' => false,
-            'final_class' => false,
-            'final_public_method_for_abstract_class' => false,
         ]);
     }
 }
