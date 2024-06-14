@@ -15,6 +15,7 @@ class Php83
     {
         $ruleSet = rulesetPhp83::create()->withRules(Rules::fromArray(
             [
+                'final_public_method_for_abstract_class' => false,
                 'native_function_invocation' => false,
                 'native_constant_invocation' => false,
                 'yoda_style' => [
