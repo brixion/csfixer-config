@@ -15,11 +15,12 @@ class Php83
     {
         $ruleSet = rulesetPhp83::create()->withRules(Rules::fromArray(
             [
-                'native_function_invocation' => false,
-                'native_constant_invocation' => false,
-                'mb_str_functions' => false,
-                'final_class' => false,
-                'final_public_method_for_abstract_class' => false,
+                'yoda_style' => [
+                    'always_move_variable' => true,
+                    'equal' => false,
+                    'identical' => false,
+                    'less_and_greater' => false,
+                ]
             ]
         ));
 

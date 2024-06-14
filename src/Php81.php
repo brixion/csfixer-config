@@ -20,6 +20,12 @@ class Php81
                 'mb_str_functions' => false,
                 'final_class' => false,
                 'final_public_method_for_abstract_class' => false,
+                'yoda_style' => [
+                    'always_move_variable' => true,
+                    'equal' => false,
+                    'identical' => false,
+                    'less_and_greater' => false,
+                ]
             ]
         ));
 
