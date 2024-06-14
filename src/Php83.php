@@ -5,14 +5,16 @@ declare(strict_types=1);
 namespace Brixion\CsfixerConfig;
 
 use Ergebnis\PhpCsFixer\Config\Factory;
-use Ergebnis\PhpCsFixer\Config\RuleSet\Php81 as Php81RuleSet;
+use Ergebnis\PhpCsFixer\Config\RuleSet\Php83 as rulesetPhp83;
 use PhpCsFixer\Config;
 
-class Php81
+class Php83
 {
     public static function getConfig(): Config
     {
-        return Factory::fromRuleSet(new Php81RuleSet(), [
+        $ruleSet = rulesetPhp83::create();
+
+        return Factory::fromRuleSet($ruleSet, [
             'native_function_invocation' => false,
             'native_constant_invocation' => false,
             'mb_str_functions' => false,
