@@ -15,6 +15,8 @@ class Php83
     {
         $ruleSet = rulesetPhp83::create()->withRules(Rules::fromArray(
             [
+                'native_function_invocation' => false,
+                'native_constant_invocation' => false,
                 'yoda_style' => [
                     'always_move_variable' => true,
                     'equal' => false,
