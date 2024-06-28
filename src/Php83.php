@@ -23,7 +23,14 @@ class Php83
                     'equal' => false,
                     'identical' => false,
                     'less_and_greater' => false,
-                ]
+                ],
+                'class_attributes_separation' => [
+                    'elements' => [
+                        'const' => 'one',
+                        'method' => 'one',
+                        'property' => 'one',
+                    ],
+                ],
             ]
         ));
 

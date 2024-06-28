@@ -1,7 +1,7 @@
 {
     "name": "brixion/csfixer-config",
     "description": "A config for use with csfixer",
-    "version": "v1.1.4",
+    "version": "v1.1.5",
     "type": "library",
     "license": "MIT",
     "autoload": {
