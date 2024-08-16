@@ -31,6 +31,7 @@ class Php83
                         'property' => 'one',
                     ],
                 ],
+                'heredoc_to_nowdoc' => false,
             ]
         ));
 
