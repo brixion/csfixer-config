@@ -1,0 +1,17 @@
+---
+# This file is managed by brixion/boilerplate.
+# Do not edit it in this repository; changes will be overwritten on the next sync.
+name: Dependabot
+
+on:
+  pull_request:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  automate:
+    name: Automate
+    uses: brixion/workflows/.github/workflows/reusable-dependabot-automate.yml@main
+    secrets: inherit
