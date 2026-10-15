@@ -1,20 +1,14 @@
 ---
+# This file is managed by brixion/boilerplate.
+# Do not edit it in this repository; changes will be overwritten on the next sync.
 version: 2
 updates:
-  - package-ecosystem: "composer"
-    directory: "/"
+  - package-ecosystem: github-actions
+    directory: /
+    open-pull-requests-limit: 10
     schedule:
-      interval: "weekly"
-      day: "monday"
-      time: "06:00"
-      timezone: "Europe/Amsterdam"
-
+      interval: weekly
     commit-message:
-      prefix: "⬆️  [ Composer ] "
-
-    # Specify labels for pull requests
+      prefix: '⬆️ [ GitHub Actions ] '
     labels:
-      - "dependencies"
-
-    # Set the versioning strategy
-    versioning-strategy: auto
+      - 'type: 📦 dependencies'

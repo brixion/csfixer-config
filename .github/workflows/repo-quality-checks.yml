@@ -1,0 +1,16 @@
+---
+# This file is managed by brixion/boilerplate.
+# Do not edit it in this repository; changes will be overwritten on the next sync.
+name: Repo Quality Checks
+
+on:
+  push:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  lint:
+    name: Lint
+    uses: brixion/workflows/.github/workflows/reusable-lint.yml@main
